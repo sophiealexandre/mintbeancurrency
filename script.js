@@ -19,7 +19,7 @@ const currencyFunction = currency.value;
 
  var total = conversion_rates * amountFunction;
 
-  txt = "Congrats! You have " + total + " !";
+  txt = "Congrats! You have " + total + currency.value + " !";
 
   document.getElementById("city").innerHTML = txt;
 
