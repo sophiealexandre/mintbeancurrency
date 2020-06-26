@@ -10,7 +10,7 @@ const currencyFunction = currency.value;
   const amountFunction = amount.value;
 // Fetch values
 
-  fetch('https://v6.exchangerate-api.com/v6/ac3b15a0577ed4a91b0c4277/latest/EUR')
+  fetch('https://v6.exchangerate-api.com/v6/'+apiKey+'/EUR')
           .then(response => response.json())
           .then(data => {
             const conversion_rates = data.conversion_rates[currencyFunction];
